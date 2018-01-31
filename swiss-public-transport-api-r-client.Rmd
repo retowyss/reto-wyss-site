@@ -1,0 +1,63 @@
+---
+title: Swiss Public Transport API R Client
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
+---
+
+I wrote this R client for the [Swiss public transport API](//transport.opendata.ch/) to facilitate data retrieval for analysis and visualization. The package is available on [Github](//github.com/retowyss/swiss-public-transport-r). I plan on adding it to CRAN; the official R-package repository. The documentation is hosted on [Github-Pages](//retowyss.github.io/swiss-public-transport-r). 
+
+The `tapi` functions provides a unified interface to the three api endpoints.
+
+1. locations
+2. connections
+3. stationsboard
+
+This is a minimal example. I retrieve the stations in Burgdorf. I extract the relevant columns from the data and display the first three rows.
+
+```{r, message=FALSE, warning=FALSE}
+# library(SwissPublicTransport)
+# library(dplyr)
+# 
+# tapi("locations", query = "Bern") %>%
+#   .$stations %>%
+#   select(-score, -distance, -coordinate.type) %>%
+#   filter(row_number() <= 3) 
+```
+
+`tapi` can only process one request at a time. However, to process a lot of requests `pmap` is handy. 
+
+Here, I retrieve the connections from Burgdorf to Bern and the connections from Bern to Burgdorf on November 5, 2017 at 1.37 PM. The plot shows that it takes longer to commute from Burgdorf to Bern than it takes to commute from Bern to Burgdorf.
+
+```{r, message=FALSE, warning=FALSE}
+# library(purrr)
+# library(lubridate)
+# library(stringr)
+# library(ggplot2)
+# 
+# reqs <- tibble(
+#   endpoint = "connections",
+#   from     = c("Bern", "Burgodrf"),
+#   to       = c("Burgdorf", "Bern"),
+#   date     = "2017-11-05",
+#   time     = "13.37"
+# )
+# 
+# extract_time <- . %>% 
+#   str_replace_all("T|(.{5}$)", "") %>% 
+#   as_datetime()
+# 
+# b2b <- reqs %>% 
+#   pmap(tapi) %>% 
+#   map( ~ .$connections) %>% 
+#   bind_rows() %>% 
+#   mutate(
+#     direction = paste0(from.station.name, " -> ", to.station.name),
+#     duration = extract_time(to.arrival) - extract_time(from.departure)
+#   ) 
+# 
+# ggplot(b2b, aes(x = direction, y = duration)) +
+#   geom_boxplot()
+```
+

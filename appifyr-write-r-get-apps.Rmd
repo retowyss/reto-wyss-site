@@ -1,0 +1,41 @@
+---
+title: Appifyr - Write R Get Apps
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
+---
+
+[![Build Status](https://travis-ci.org/retowyss/appifyr.svg?branch=master)](https://travis-ci.org/retowyss/appifyr)
+[![Coverage status](https://codecov.io/gh/retowyss/appifyr/branch/master/graph/badge.svg)](https://codecov.io/github/retowyss/appifyr?branch=master)
+
+# Overview
+
+Appifyr is an R-package that makes building web-apps easy.
+
+![Two lines of code turn a function into an app!](http://static.reto-wyss.com/appifyr/sepals-and-petals.png)
+
+* __Appifyr__ on Github : [github.com/retowyss/appifyr](//github.com/retowyss/appify) 
+    * Documentation on Github-Pages: [retowyss.github.io/appifyr](//retowyss.github.io/appify)
+* __Demo App__ on the OpenCPU Cloud Server: [retowyss.ocpu.io/sepals-and-petals](//retowyss.ocpu.io/sepals-and-petals)
+ 
+# Quickstart
+
+```r
+install.packages("devtools")
+devtools::install_github("retowyss/appifyr")
+install.packages("opencpu")
+```
+
+Open up a new package (project) in RStudio.
+
+```r
+appifyr::new_app()
+```
+
+The new `app` directory is where your app lives.
+
+```r
+appifyr::build_app(from_rmd = TRUE)
+opencpu::ocpu_start_app("YourPackageName")
+```

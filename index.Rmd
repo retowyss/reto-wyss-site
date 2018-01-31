@@ -1,0 +1,29 @@
+---
+title: Reto Wyss
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
+---
+
+![Charge!](img/2017-12-29-Reto-Charge.jpg)
+
+# About
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla enim turpis, rhoncus iaculis libero laoreet vitae. Fusce consectetur vitae ligula ac volutpat. Donec rutrum, massa sit amet posuere varius, arcu nisi ultricies tellus, et faucibus elit orci id nulla. Curabitur aliquam tellus ornare, convallis erat nec, vulputate odio. Nam ac aliquam augue. Aliquam magna ex, semper et velit non, feugiat mattis augue. Quisque quis dapibus turpis. Mauris pellentesque porta lacinia. Suspendisse viverra augue nec massa feugiat suscipit. Suspendisse magna erat, condimentum vitae arcu et, fermentum ultricies quam. Cras nulla risus, dapibus id lacus non, rutrum sollicitudin nisl. Mauris non urna turpis. Nunc blandit dui in viverra eleifend. Donec tellus augue, vestibulum eget mauris placerat, gravida facilisis nibh. Pellentesque sit amet justo tincidunt, fermentum sem id, accumsan tellus.
+
+Nullam euismod urna in leo varius tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vitae sollicitudin ante. Sed sit amet nibh eget sapien pulvinar semper et id arcu. Duis a tortor ultrices, dictum tortor et, commodo est. Praesent nec mauris quis metus molestie convallis. Etiam a elit suscipit arcu tincidunt cursus. Etiam id ligula viverra magna laoreet consequat. In sodales gravida lorem non tristique. Nam sapien justo, egestas id lacus id, interdum pellentesque elit. Quisque imperdiet, leo quis mollis placerat, lectus dolor porttitor massa, quis suscipit arcu ex et dui. Integer placerat odio a semper pellentesque.
+
+# Contact
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+Aliquam sit amet purus elementum, convallis tortor quis, finibus eros. Proin tellus felis, scelerisque at nunc vel, ultrices pulvinar mi. Sed pretium bibendum mattis. Aliquam est tortor, ullamcorper id turpis at, sodales fringilla risus. Ut nec facilisis ligula. Sed sit amet purus fermentum libero tempor ultricies vel a libero. Suspendisse potenti. Curabitur vestibulum ligula in mattis lacinia. Phasellus porttitor magna ac nisl pellentesque, et mattis dui aliquam. Aliquam iaculis rutrum nunc, vel imperdiet erat dignissim quis.
+
+Donec efficitur sit amet ipsum sit amet blandit. Integer at nulla id sem pulvinar luctus. Nullam venenatis consectetur aliquet. Curabitur arcu sapien, pretium vitae tristique sit amet, malesuada sit amet arcu. In at faucibus lorem, ut semper est. Nullam sit amet mollis mauris, a venenatis odio. Integer vel dapibus mi. Aliquam et tristique ante. Nam vel purus maximus, commodo mi id, scelerisque dui.
+
+Vivamus volutpat dolor commodo turpis elementum, sit amet fermentum sem laoreet. Nam tristique mauris non mollis molestie. Etiam consectetur arcu non justo venenatis, quis facilisis massa tincidunt. Sed auctor aliquam velit. Pellentesque viverra eu nisl vel venenatis. Vivamus fermentum nulla id mi bibendum hendrerit. Curabitur faucibus pulvinar efficitur. Curabitur venenatis neque lacus, eu mattis nunc efficitur at. Quisque quis mauris hendrerit, tempor neque sed, ultricies felis. Duis id dui quis erat consectetur pulvinar ac quis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a nisl nec metus ultricies commodo. Praesent dui arcu, molestie in rhoncus id, pellentesque ac magna. Quisque commodo aliquet arcu, ac facilisis metus feugiat id. Aliquam nec sapien velit.

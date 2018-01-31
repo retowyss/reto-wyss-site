@@ -1,0 +1,34 @@
+name: my-personal-website
+output_dir: docs
+exclude: docs
+include: .noyekyll
+navbar:
+  title: Reto Wyss
+  type: inverse
+  left:
+  - text: Projects
+    icon: fa-diamond fa-lg
+    menu:
+    - text: Appifyr - Write R Get Apps
+      href: appifyr-write-r-get-apps.html
+    - text: Energy Benchmarking Tool
+      href: energy-benchmarking-tool.html
+    - text: Open Data Visualisation App
+      href: open-data-visualization-app.html
+  right:
+  - icon: fa-envelope fa-lg
+    href: mailto:reto.wyss.ch@gmail.com
+  - icon: fa-github-square fa-lg
+    href: https://github.com/retowyss
+output:
+  html_document:
+    theme: paper
+    highlight: textmate
+    include:
+      in_header: _exclude/partials/in_header.html
+      before_body: _exclude/partials/before_body.html
+      after_body: _exclude/partials/after_body.html
+    css: css/reto-wyss-styles.css
+    lib_dir: site_libs
+    self_contained: no
+
