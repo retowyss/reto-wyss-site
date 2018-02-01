@@ -19,7 +19,7 @@ Appifyr is an R-package that makes building web-apps easy.
     * Documentation on Github-Pages: [retowyss.github.io/appifyr](//retowyss.github.io/appify)
 * __Demo App__ on the OpenCPU Cloud Server: [retowyss.ocpu.io/sepals-and-petals](//retowyss.ocpu.io/sepals-and-petals)
  
-# Quickstart
+# Quickstart 
 
 ```r
 install.packages("devtools")
